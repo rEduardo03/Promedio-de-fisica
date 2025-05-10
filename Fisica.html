@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datos de Física</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .contenedor {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      width: 300px;
+    }
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      color: #34495e;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #3498db;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    #suma,
+    #promedio {
+      display: block;
+      margin-top: 5px;
+      font-size: 18px;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>DATOS DE FÍSICA</h1>
+    <label for="valores">Ingrese los datos para sumarlos y promediarlo:</label>
+    <input type="text" id="valores" placeholder="Ejemplo: 1, 2, 3, 4" />
+    <button onclick="Proceso()">Calcular</button>
+
+    <label>Suma:<span id="suma"></span></label>
+    <label>Promedio:<span id="promedio"></span></label>
+  </div>
+
+  <script src="programación.js"></script>
+</body>
+</html>
